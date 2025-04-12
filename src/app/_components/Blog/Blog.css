@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../../public/Fonts/Roboto-Regular.otf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../../public/Fonts/Roboto-Medium.otf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../../public/Fonts/Roboto-Bold.otf') format('woff2');
+  }
+  
+
+  .blog-main{
+    
+  }
+
+  .blog-header-wrapper{
+    margin-bottom: 12px;
+    margin-right: 12px;
+    border-radius: 50px !important;
+  }
+
+  .highlighted-row{
+    flex-wrap: wrap;
+  }
+
+
+  

@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../../public/Fonts/Roboto-Regular.otf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../../public/Fonts/Roboto-Medium.otf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../../public/Fonts/Roboto-Bold.otf') format('woff2');
+  }
+  .st-et{
+    display: inline-block; /* Ensures the element is as wide as its content */
+
+    padding: 4px 8px;
+    background-color: #00213D;
+    color: white !important;
+    border-radius: 10px;
+}
+  .ekipa-main{
+    width: 100%;
+    padding: 10vh 0;
+  }
+
+  .ekipa-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+
+.ekipa-left{
+    width: 40%;
+}
+
+.ekipa-right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.less3{
+    justify-content: flex-start !important;
+}
+
+.member-component{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    width: 33.333333%;
+    padding: 20px;
+}
+
+.ekipa-member-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member-content{
+    margin-left: 0px;
+    margin-top: 1rem;
+}
+
+.ekipa-name{
+    font-size: 32px;
+    font-family: 'Roboto-Bold';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.ekipa-work{
+    font-size: 20px;
+    font-family: 'Roboto-Light';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.ekipa-contact{
+    display: flex;
+    margin-top: 32px;
+}
+
+.ekipa-member-icon{
+    width: 32px;
+}
+
+.bigleft{
+    margin-left: 20px;
+}
+
+@media (max-width: 999px) {
+    .ekipa-wrapper{
+        flex-direction: column;
+    }
+
+    .ekipa-left{
+        width: 100%;
+    }
+
+    .ekipa-right{
+        width: 100%;
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 999px) {
+    .member-component{
+        flex-direction: column;
+    }
+
+    .ekipa-member-img{
+        width: 100%;
+    }
+
+    .member-content{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 32px;
+    }
+
+    .ekipa-right{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-top: 4rem;
+    }
+    
+    .member-component{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 64px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+}

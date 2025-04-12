@@ -1,0 +1,1014 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../../public/Fonts/Roboto-Regular.otf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../../public/Fonts/Roboto-Medium.otf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../../public/Fonts/Roboto-Bold.otf') format('woff2');
+  }
+  
+
+
+
+.navbar-main {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    position: fixed;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    opacity: 1;
+    z-index: 999;
+    /*box-shadow: 0px 2px 10px 0px rgba(147, 147, 147, 0.16);*/
+    box-shadow: 0px 2px 10px 0px rgba(147, 147, 147, 0.16);
+    overflow: hidden;
+}
+
+.dark-button{
+    background-color: #00213D;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-family: 'Roboto-Regular';
+      font-weight: 400;
+      font-style: normal;
+      transition: all 0.3s;
+      border: 1px solid #00213D;
+  
+  }
+  
+  .dark-button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #00213D;
+  
+  }
+
+.navbar-row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+
+
+.navigationopen {
+    font-family: 'Roboto-Regular';
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25rem;
+
+    color: #000;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.name-img {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.shopping-bag-icon {
+    width: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.empty-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.icon-bag-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.navigation {
+    font-family: 'Roboto-Regular';
+    font-weight: 600;
+    font-style: normal;
+    font-size: .75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.navigation:hover {
+    text-decoration: underline;
+}
+
+.navigationopen {
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+
+    color: #000;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.navigations-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-logo-wrapper {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+.logo-img {
+
+    height: 74px; /* Ensure width is set to auto to maintain aspect ratio. */
+    object-fit: contain; /* This ensures the image scales nicely within the container without being cropped. */
+    cursor: pointer;
+}
+
+.navbar-button {
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    margin-left: 8px;
+    border: 2px solid #00213D;
+    background-color: #00213D;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50px;
+    color: white;
+}
+
+.navbar-button:hover {
+    background-color: #00213D;
+    color: white;
+}
+
+.navbutton{
+   background-color:  #00213D;
+   border: 1px solid #00213D;
+   margin-top: 0;
+
+}
+
+.nav-open-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.arrow-right {
+    position: relative;
+    display: inline-block;
+    width: 0px;
+    /* Length of the arrow's main line */
+    height: 2px;
+    /* Thickness of the arrow's line */
+    background: black;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.arrow-right::before,
+.arrow-right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    /* Length of the slanted lines */
+    height: 2px;
+    /* Thickness of the slanted lines */
+    background: black;
+    transition: all 0.3s ease;
+
+}
+
+.arrow-right::before {
+    transform: rotate(-45deg);
+    /* Angle of the top slant */
+    transform-origin: top right;
+}
+
+.arrow-right::after {
+    transform: rotate(45deg);
+    /* Angle of the bottom slant */
+    transform-origin: bottom right;
+}
+
+.arrow-right.down
+ {
+    transform: rotate(90deg);
+    /* Both lines rotate 45deg */
+}
+
+
+
+/**************************************/
+.navigation-item {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    /* Initially transparent */
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 0px;
+    transition: visibility 0.3s ease, opacity 0.3s ease, max-height 0.3s ease;
+    /* Transition effect */
+}
+
+.navigation-item:hover .dropdown-menu {
+    visibility: visible;
+    /* Visible on hover */
+    max-height: 880px;
+
+    opacity: 1;
+    /* Opaque on hover */
+}
+
+.dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto-Regular';
+    font-weight: 600;
+    font-style: normal;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    display: block;
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+
+}
+
+.menu-dropdown-item {
+    font-family: 'Roboto-Regular';
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.menu-dropdown.visible {
+    max-height: 800px;
+    /* Adjust this value as needed to fit your content */
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 24px;
+}
+
+.firstopenw{
+    margin-bottom: 0px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -0px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+/***************************************************/
+
+
+
+.kontakt-hidden-div {
+    position: fixed;
+    right: -100%; /* Initially off-screen */
+    top: 0;
+    width: 30%; /* Adjust as needed */
+    height: 100vh; /* Adjust as needed */
+    transition: right 0.3s ease; /* Smooth transition for sliding effect */
+    /* Add more styling as needed */
+    background-color: white;
+    box-shadow: 0px 2px 10px 0px rgba(147, 147, 147, 0.16);
+
+}
+
+.kontakt-hidden-div.slide-in {
+    right: 0; /* Slides in */
+}
+
+.kontakt-hidden-div.slide-out {
+    right: -100%; /* Slides out */
+}
+
+.contact-first-row-please{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 24px;
+    margin-right: 32px;
+}
+
+.clasinput{
+    width: 80% !important;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid hsla(0,0%,7%,.11);
+    border-radius: 4px;
+    outline: none;
+    /* Remove default outline */
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    color: black;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+
+.sestavine-div{
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lwr{
+    width: 100% !important;
+}
+
+.thisarea{
+    margin-top: 24px;
+}
+
+.last-row{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.margintopcontact{
+    margin-top: 32px;
+}
+
+.navbar-alert{
+    position: fixed; /* or 'absolute' if more appropriate for your layout */
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    z-index: 1000; 
+}
+
+.bar3 {
+    transform: rotate(45deg) translate(0px, 7px) !important;
+}
+
+.bar4 {
+    transform: rotate(-45deg) translate(0px, -7px) !important;
+}
+
+.speed3 {
+    transform: rotate(45deg) translate(0px, 7px) !important;
+}
+
+.speed4 {
+    transform: rotate(-45deg) translate(0px, -7px) !important;
+}
+
+.navigations-horion-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.horion-navigation{
+    margin-left: 32px;
+    text-align: center;
+    color: #000;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.horion-navigation:hover{
+    color: #00213D;
+}
+
+.horion-contact-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    background-color: white;
+    margin-right: 12px;
+    font-family: 'Roboto-Bold';
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.3s ease;
+
+}
+
+.horion-uci-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #00213D;
+    border-radius: 4px;
+    background-color: #00213D;
+    margin-right: 12px;
+    color: white;
+    font-family: 'Roboto-Bold';
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+.horion-uci-button:hover{
+    background-color: #00213D;
+}
+
+.horion-contact-button:hover{
+    background-color: #000;
+    color: white;
+}
+
+.mobile-navbar-row{
+    display: none;
+}
+
+.navigations-horion-wrapper a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Optional: Ensures link color matches the surrounding text */
+    cursor: pointer; /* Optional: Makes it clear that the element is clickable */
+    transform: translateY(4px);
+}
+
+.navigations-horion-wrapper a:visited {
+   padding-bottom: 0;
+}
+
+.navigations-horion-wrapper a::before {
+    content: none; /* This makes the pseudo-element not generate any content */
+    display: none;
+ }
+
+ .navigationsopen-wraper a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Optional: Ensures link color matches the surrounding text */
+    cursor: pointer; /* Optional: Makes it clear that the element is clickable */
+    transform: translateY(4px);
+    width: 100%;
+}
+
+.navigationsopen-wraper a:visited {
+   padding-bottom: 0;
+}
+
+.navigationsopen-wraper a::before {
+    content: none; /* This makes the pseudo-element not generate any content */
+    display: none;
+ }
+
+ .hidden-logo-wrapper a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Optional: Ensures link color matches the surrounding text */
+    cursor: pointer; /* Optional: Makes it clear that the element is clickable */
+    transform: translateY(4px);
+}
+
+.hidden-logo-wrapper a:visited {
+   padding-bottom: 0;
+}
+
+.hidden-logo-wrapper a::before {
+    content: none; /* This makes the pseudo-element not generate any content */
+    display: none;
+ }
+
+
+
+
+
+ .search-bar-wrapper {
+    position: relative; /* Ensures the dropdown can be positioned absolutely relative to this */
+    width: 240px; /* or max-width if you want it narrower */
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+/* Input styling for a nicer look */
+.search-input {
+    width: 100%; /* Adjust based on preference */
+    border: 1px solid #1D1D1D;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #1D1D1D;
+    border-radius: 4px;
+    background-color: white;
+    color: #000;
+    font-family: 'Roboto-Bold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Styling for the list that appears below the search bar */
+.section-list {
+    position: absolute;
+    top: 100%; /* Position directly below the search bar */
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd; /* Light border around the dropdown */
+    border-top: none; /* Makes it look connected to the input box */
+    z-index: 1000; /* Keeps it above other content */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Matches the input width */
+    border-radius: 4px;
+    max-height: 120px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Styling for each item in the section list */
+.section-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Light line between items */
+}
+
+.section-list li a::before {
+    background-image: none;
+}
+
+.section-list li:last-child {
+    border-bottom: none; /* No border at the bottom of the last item */
+}
+
+.section-list li a {
+    text-decoration: none;
+    color: black; /* Basic color for links, adjust as needed */
+    display: block; /* Makes the whole area clickable */
+}
+
+.section-list li a:hover {
+    background-color: #fff; /* Light hover effect */
+}
+
+.navigator-wrapper{
+    width: 100%;
+	height: 100vh;
+	position: fixed;
+    top: 0;
+    left: 0;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+.dissapear_layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+}
+
+.white{
+    background-color: #fff;
+}
+
+.blue{
+    background-color: #00213D;
+}
+
+.first-diss{
+    animation: dissapear-effect-3-1 1.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
+
+}
+
+.second-diss {
+    animation: dissapear-effect-3-2 1.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
+}
+
+.third-diss {
+    animation: dissapear-effect-3-3 1.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
+}
+
+
+@keyframes dissapear-effect-3-1 {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+    25%, 75% {
+        transform: translate3d(-100%, 0, 0);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    100% {
+        transform: translate3d(-200%, 0, 0);
+    }
+}
+
+@keyframes dissapear-effect-3-2 {
+	0%, 12.5% {
+		transform: translate3d(0, 0, 0);
+	}
+	37.5%, 62.5% {
+        transform: translate3d(-100%, 0, 0);
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	87.5%, 100% {
+        transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes dissapear-effect-3-3 {
+	0%, 25% {
+		transform: translate3d(0, 0, 0);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	}
+	75%, 100% {
+        transform: translate3d(-200%, 0, 0);
+	}
+}
+
+
+@keyframes anim-effect-3-1 {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	25%, 75% {
+		transform: translate3d(0, -100%, 0);
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	100% {
+		transform: translate3d(0, -200%, 0);
+	}
+}
+
+@keyframes anim-effect-3-2 {
+	0%, 12.5% {
+		transform: translate3d(0, 0, 0);
+	}
+	37.5%, 62.5% {
+		transform: translate3d(0, -100%, 0);
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	87.5%, 100% {
+		transform: translate3d(0, -200%, 0);
+	}
+}
+
+@keyframes anim-effect-3-3 {
+	0%, 25% {
+		transform: translate3d(0, 0, 0);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	}
+	75%, 100% {
+		transform: translate3d(0, -200%, 0);
+	}
+}
+
+
+
+
+.smaller{
+    
+    font-size: 16px !important;
+    background-color: #5bebc0 !important;
+    color: #00213D !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1500px) {
+    .navbar-row {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-row {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.memenu{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+   
+    .navigations-horion-wrapper{
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    
+
+    .navbar-row {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .menu-icon {
+        width: 20px;
+        height: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-bar {
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+        transition: transform 0.3s ease;
+
+    }
+
+    .menu-icon:hover .menu-bar {
+        background-color: #000;
+    }
+
+    .bar1 {
+        transform: rotate(45deg) translate(0px, 8px);
+    }
+
+    .bar2 {
+        transform: rotate(-45deg) translate(0px, -8px);
+    }
+
+    .bar3 {
+        transform: rotate(45deg) translate(0px, 7px) !important;
+    }
+
+    .bar4 {
+        transform: rotate(-45deg) translate(0px, -7px) !important;
+    }
+
+    .speed3 {
+        transform: rotate(45deg) translate(0px, 7px) !important;
+    }
+
+    .speed4 {
+        transform: rotate(-45deg) translate(0px, -7px) !important;
+    }
+
+
+    .hidden-menu {
+        display: block;
+        height: calc(100vh - 80px);
+
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 100%;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+
+    .memenu{
+        height: calc(100vh - 80px);
+
+        display: flex;
+        position: fixed;
+        left: 100%;
+        top: 79px;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .show-menu {
+        left: 0%;
+    }
+
+    .navigationsopen-wraper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateY(-0px);
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .logo-wrapper {
+        display: none;
+    }
+
+    .hidden-logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-img {
+
+        height: 74px; /* Ensure width is set to auto to maintain aspect ratio. */
+        object-fit: contain; /* This ensures the image scales nicely within the container without being cropped. */
+        cursor: pointer;
+    }
+
+    .empty-wrapper {
+        width: 50%;
+    }
+
+    .navigations-wrapper {
+        width: 0%;
+    }
+
+    .icons-wrapper {
+        width: 0%;
+        display: none;
+    }
+
+    .navbar-button {
+        display: none;
+    }
+
+    .kontakt-hidden-div {
+        position: fixed;
+        right: -100%; /* Initially off-screen */
+        top: 0;
+        width: 85%; /* Adjust as needed */
+        height: 100vh; /* Adjust as needed */
+        transition: right 0.3s ease; /* Smooth transition for sliding effect */
+        /* Add more styling as needed */
+        background-color: white;
+    }
+
+    .navbutton{
+        display: none;
+    }
+    
+    .desktop-navbar-row{
+        display: none;
+    }
+
+    .search-bar-wrapper {
+        position: relative; /* Ensures the dropdown can be positioned absolutely relative to this */
+        width: 100%; /* or max-width if you want it narrower */
+        display: flex;
+        justify-content: center;
+        margin-right: 12px;
+        
+
+        
+    }
+
+    .horion-iskalnik{
+        margin-top: 32px;
+        font-family: 'Roboto-Regular';
+
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.75rem;
+    
+        color: #000;
+    }
+
+    .iskalnik-icon{
+        width: 32px;
+        height: 32px;
+        margin-left: 24px;
+    }
+
+    .iskalnik-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .greenhorion{
+        color: #00213D;
+    }
+
+}

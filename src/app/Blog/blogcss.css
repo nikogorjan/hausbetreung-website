@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../../../public/Fonts/Roboto-Regular.otf') format('woff2');
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../../../public/Fonts/Roboto-Medium.otf') format('woff2');
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('../../../public/Fonts/Roboto-Light.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('../../../public/Fonts/Roboto-Bold.otf') format('woff2');
+}
+
+@font-face {
+    font-family: 'PoppinsBlack';
+    src: url('../../../public/Fonts/Roboto-Black.ttf') format('woff2');
+}
+
+
+
+.blog-post-main{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+
+  .blog-post-wrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .blog-img-wrapper{
+    width: 70%;
+    margin: 0 auto;
+
+  }
+
+  .blogp-img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .blogp-content-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.text-regular-semibold{
+    font-size: clamp(1rem, 0.9705rem + 0.1747vw, 1.0rem);
+    font-family: 'PoppinsBold';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    margin-top: 12px;
+}
+
+.heading-desktop-h3{
+    font-size: clamp(2rem, 1.7642rem + 1.3974vw, 4rem);
+    font-family: 'PoppinsBold';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+}
+
+.text-medium-normal{
+    font-size: clamp(1rem, 0.9705rem + 0.1747vw, 1.25rem);
+    font-family: 'PoppinsLight';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    margin-top: 24px;
+}
+
+.blog-post-urnik{
+    padding: 24px 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 32px;
+    width: 50%;
+}
+
+.blog-link-wrapper{
+    padding: 12px 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .blog-link-wrapper:hover{
+    background-color: #f9f9f9;
+  }
+
+  .smooth-scroll {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    font-size: clamp(1rem, 0.9705rem + 0.1747vw, 1.0rem);
+    font-family: 'PoppinsMedium';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    margin-top: 0px;
+    scroll-behavior: smooth;
+
+  }
+  
+  .smooth-scroll:hover {
+    text-decoration: underline; /* Optional: for better user experience */
+  }
+
+  .transformed-for-link{
+    transform: translateY(-74px);
+  }
+
+  .target-section{
+    margin-top: 64px;
+}
+
+
+.heading-desktop-h6{
+    font-size: clamp(1.25rem, 1.1616rem + 0.524vw, 2rem);
+    font-family: 'PoppinsBold';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    margin-top: 12px;
+}
+
+
+.bullet-points-wrapper{
+  padding-left: 12px;
+  margin-top: 32px;
+}
+
+.bullet-row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
+.bullet{
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #000;
+  margin-right: 12px;
+  margin-top: 6px;
+  flex-shrink: 0; /* Prevent the bullet from shrinking */
+
+}
+
+.normrennr{
+  margin-top: 0 !important; 
+}
+
+.boldovano{
+  font-family: 'PoppinsBold';
+}
+
+.bigtab{
+  margin-top: 32px;
+}
+
+.target-divider{
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.target-left{
+  width: 50%;
+}
+
+.target-right{
+  width: 50%;
+}
+
+.blogger-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1600px) {
+    
+    
+    .blogp-content-wrapper{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    .blog-post-urnik{
+        width: 60%;
+    }
+
+    .blog-img-wrapper{
+      width: 80%;
+      margin: 0 auto;
+  
+    }
+    
+    
+  }
+
+  @media (max-width: 1200px) {
+    
+    .blogp-content-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+
+    .blog-post-urnik{
+        width: 70%;
+    }
+
+    .blog-img-wrapper{
+      width: 90%;
+      margin: 0 auto;
+  
+    }
+   
+    
+  }
+
+
+  @media (max-width: 1000px) {
+    .target-left{
+      width: 100%;
+      margin-bottom: 32px;
+  }
+
+  .target-right{
+      width: 100%;
+      margin-bottom: 32px;
+  }
+    .target-divider{
+      flex-direction: column;
+  }
+
+    .blog-post-urnik{
+        width: 90%;
+    }
+    .blog-img-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    
+      }
+
+      .blogp-content-wrapper{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    
+}
