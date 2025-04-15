@@ -62,14 +62,19 @@ const Footer = () => {
 
                         </div>
                         <div className='subscribe-wrapper'>
-                            <h6 className='heading-desktop-h6'>Abonnieren</h6>
-                            <p className='text-regular-normal'>Verpassen Sie keine wichtigen Neuigkeiten</p>
+                        <h6 className='heading-desktop-h6'>Firmeninfo</h6>
+                            <p className='text-regular-normal'>Lidya Stopar</p>
+                            <p className='text-regular-normal'>Beerenweg 2</p>
+                            <p className='text-regular-normal'>9122 St.Kanzian/Klopeiner See</p>
+                            <p className='text-regular-normal'>GLN:9110036143419</p>
+                            <p className='text-regular-normal'>Steuernummer: AT 57 227/7846</p>
+                            {/*<h6 className='heading-desktop-h6'>Abonnieren</h6>
                             <div className='input-rowww'>
                                 <input type='email' placeholder='Geben Sie Ihre E-Mail-Adresse ein' className='email-inputt full-width' />
                                 <div className='hero-button black-button button-maring outlined-button marginleft blackbg full-mg'>Abonnieren</div>
 
                             </div>
-                            <p className='oppozorilio'>Mit Ihrer Anmeldung bestätigen Sie, dass Sie die Nutzungsbedingungen akzeptieren und zustimmen, dass wir Ihnen Benachrichtigungen über Neuigkeiten senden.</p>
+                            <p className='oppozorilio'>Mit Ihrer Anmeldung bestätigen Sie, dass Sie die Nutzungsbedingungen akzeptieren und zustimmen, dass wir Ihnen Benachrichtigungen über Neuigkeiten senden.</p>*/}
                         </div>
                     </div>
 
